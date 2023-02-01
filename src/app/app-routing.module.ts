@@ -8,6 +8,10 @@ const routes: Routes = [
     path: 'home',
     loadChildren: () => import('~/app/home/home.module').then((m) => m.HomeModule),
   },
+  {
+    path: 'second-screen',
+    loadChildren: () => import('~/app/second-screen/second-screen.module').then((m) => m.SecondScreenModule),
+  },
 ]
 
 @NgModule({
